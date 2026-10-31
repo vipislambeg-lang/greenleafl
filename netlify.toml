@@ -1,0 +1,8 @@
+# Настройка деплоя на Netlify (если решите подключить репозиторий к Netlify).
+# Сайт полностью статический — собирается командой ниже в папку out.
+[build]
+  command = "npx next build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
